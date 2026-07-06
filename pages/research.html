@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Research Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery, Bootstrap, etc. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My personal CSS and JS code -->
+    <link rel="stylesheet" href="../external.css">
+    <script src="../main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active disabled" href="../pages/research.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/personal.html">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../blog/index.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container top">
+        <h1>Research</h1>
+    </div>
+
+    <div class="container research-list">
+        <h3>MS Thesis</h3>
+        <ul>
+            <li>
+                <p><a href="./research.html">
+                        The Zig-Zag Pseudorandom Generator
+                    </a></p>
+                <p>
+                    <b>Abstract:</b>
+                    Two seminal works proved that the problem of undirected <span><math>
+                            <mi>s</mi>
+                            <mtext>-</mtext>
+                            <mi>t</mi>
+                        </math></span> connectivity is decidable deterministically
+                    in logarithmic space. Reingold originally proved this fact while Rozenman and Vadhan gave
+                    an alternative proof. These two proofs remain the only ones demonstrating this fact.
+
+                    Rozenman and Vadhan use the iterated application of the derandomized square in their proof.
+                    They also show that this product could be used to analyze the Impagliazzo-Nisan-Wigderson (INW)
+                    pseudorandom generator. Even before Rozenman and Vadhan's work, the INW generator
+                    had been used to fool various models of computation, but many newer proofs that the INW generator
+                    fools other models of computation often hinge on analysis through the derandomized square product.
+                    For instance, it fools unbounded-width permutation branching programs with a single accept state,
+                    with nearly optimal seed length.
+
+                    Reingold's algorithm relies on the iterated application of a different graph product called the
+                    zig-zag
+                    product, previously introduced in a work by Reingold, Vadhan, and Wigderson. The zig-zag
+                    product was later shown to similarly have pseudorandom walk properties on regular graphs.
+
+                    In this thesis, we describe the construction of a "zig-zag pseudorandom generator." Prior work
+                    had already described a pseudorandom walk generator based on the zig-zag product, which was used
+                    to visit all vertices in a connected undirected graph. Our contribution is that this "zig-zag
+                    pseudorandom generator" can also (like the INW generator) be used to generate pseudorandom bits
+                    that fool permutation branching programs with a single accept state, with a seed length of
+                    <span><math>
+                            <mi>O</mi>
+                            <mo>(</mo>
+                            <mtext>log&nbsp;</mtext>
+                            <mi>n</mi>
+                            <mo>⋅</mo>
+                            <mo>(</mo>
+                            <mtext>log&nbsp;</mtext>
+                            <mtext>log&nbsp;</mtext>
+                            <mi>n</mi>
+                            <mo>+</mo>
+                            <mtext>log</mtext>
+                            <mo>(</mo>
+                            <mn>1</mn>
+                            <mo>/</mo>
+                            <mi>ε</mi>
+                            <mo>)</mo>
+                            <mo>)</mo>
+                            <mo>)</mo>
+                        </math></span>. The generator is constructed without reference to the zig-zag product though it
+                    mimics the iterative
+                    construction in Reingold's algorithm under the hood. Our analysis will make use of the zig-zag
+                    product's spectral
+                    expansion properties and recently developed singular-value approximation techniques of
+                    random walk matrices.
+                </p>
+                <p>
+                    <b>Mentor:</b> <a href="https://williamhoza.com">William Hoza</a>
+                </p>
+            </li>
+        </ul>
+
+        <h3>REU Papers</h3>
+        <ul>
+            <li>
+                <p><a href="https://math.uchicago.edu/~may/REU2025/REUPapers/Mehmedagic.pdf">
+                        Markov Chain Mixing and Random Walks on Regular Graphs
+                    </a></p>
+                <p>
+                    <b>Abstract:</b>
+                    Markov chains are stochastic processes in which the next state
+                    depends only on the current state. As such, they are able to readily model
+                    various practical processes. One such process is the simple random walk on
+                    graphs, which are themselves reductions of systems like networks, molecules,
+                    etc. Since mixing involves the rate of convergence of a Markov chain to a so-
+                    called “stationary distribution,” we aim to understand mixing for this simple
+                    random walk, specifically on the class of regular graphs, while developing the
+                    theory of Markov chain mixing with other examples along the way.
+                </p>
+                <p>
+                    <b>Mentor:</b> Stephen Yearwood
+                </p>
+            </li>
+            <li>
+                <p><a href="https://math.uchicago.edu/~may/REU2024/REUPapers/Mehmedagic.pdf">
+                        Geometric Measure Theory with Methods from Algorithmic Complexity
+                    </a></p>
+                <p>
+                    <b>Abstract:</b>
+                    Since the development of Hausdorff dimension, there have been
+                    many attempts both to calculate the dimension of specific fractals and to find
+                    generalized descriptions of dimension by set transformations, classifications,
+                    etc. These calculation techniques and theorems have formed the basis for the
+                    field of geometric measure theory. More recently, the theory of computation
+                    has provided an alternative way to view this field: through the use of the
+                    point-to-set principle, mathematicians have been able to use the Kolmogorov
+                    complexity of binary strings to further generalize the fascinating theorems of
+                    the field.
+                </p>
+                <p>
+                    <b>Mentor:</b> <a href="https://dmstull.com">Donald Stull</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

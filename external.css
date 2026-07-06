@@ -1,0 +1,29 @@
+body {
+    background-color: #494949;
+    color: #D3D3D3;
+    margin: 10px;
+}
+
+#photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.top {
+    padding: 0px !important;
+    text-align: center;
+}
+
+.research-list>ul>li {
+    margin: 10px;
+}
+
+.research-list>ul>li>p {
+    margin: 2px;
+}
+
+a {
+    color: #ADD8E6;
+}
